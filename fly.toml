@@ -1,0 +1,10 @@
+app = "your-app-name"
+primary_region = "bom"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[processes]
+  app = "python bot.py"
+
+# No [[services]] block: this runs as a worker (no inbound HTTP).
